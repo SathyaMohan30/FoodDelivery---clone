@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Order Online</title>
+    <link rel="icon" href="Zomatoimg.jpeg">
+    <link rel="stylesheet" href="orderonline.css">
+</head>
+<style>
+     div.parent{ 
+        padding: 20px;
+        font-family:  Okra, Helvetica, sans-serif;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .parent{
+        /* padding: 0px 0px 70px 0px; */
+    }
+    
+    .dropdown{
+         display: inline-block; 
+        /* background-color: white; */
+    }
+    .dropdowncontent{
+        
+               display: none; 
+               background-color: white;
+    }
+    .dropdown:hover .dropdowncontent{
+        display: block;
+         position: relative; 
+         z-index: 1;
+        background-color: white;
+        color: red;
+        text-align: left;
+        /* min-width: 200px;  */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 2px 2px 12px 12px;
+       
+    }
+    section.button{
+        width: 800px;
+        height: 50px;
+         padding:5px 5px 0px 0px; 
+        border-radius: 10px;
+        box-shadow: 25px 10px 80px 10px gray;
+        background-color: white;
+        color: black;
+        margin-left: 150px; 
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav2{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        /* justify-content: space-evenly; */
+    }
+    
+    #menu{
+         display: flex;
+         justify-content:space-between; 
+         /* margin-right: 800px; 
+         padding-right: 25px;        */
+         
+    }
+    .desc{
+        text-align: center;
+    }
+    #loc{
+        border: none;
+    }
+    #search{
+        border: none;
+        /* word-spacing: 8px; */
+        width: 500px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div class="nav2">
+                  <h1><i>Zomato</i></h1>
+                <!-- <p class="head">Discover the best food & drinks in chennai</p> -->
+        <section class="button">
+            <div class="dropdown">
+                <form>
+                  <!-- <label></label> -->
+                  <!-- <input type="text" placeholder="Enter Your Location"> -->
+                <select id="loc" name="Location">
+                        <!-- <i class="fa-solid fa-location-crosshairs" style="color: #e57366;"></i><p> Location</p>  -->
+                    <div class="dropdowncontent">
+                       <label for="location" placeholder="Location"></label>
+                       <option value="Location">Location</option>
+                       <option value="chennai">Chennai</option>
+                       <option value="Tirunelveli">Tirunelveli</option>
+                       <option value="Kerla">Kerla</option>
+                       <option value="Ramnad">Ramanathapuram</option>
+                       <option value="Madurai">Madurai</option>
+                       <option value="Velore">Vellore</option>
+                       <option value="Detect">Detect Location</option>
+                   </div>
+                </select>
+                </form>
+            </div>
+               <input type="text" id="search" placeholder="Search for restaurant , cusine or a dish">
+        </section>
+    </div>
+
+    <div class="menu">
+      <h3 class="h4">Inspiration for your first order</h3>
+        <div id="menu">
+            <div id="desc">  
+                 <img src="Briyani-removebg-preview.png" alt="briyani">
+                 <p class="desc">Briyani</p>
+            </div> 
+            <div id="desc">
+                 <img src="chicken.jpg" alt="chicken">
+                 <p class="desc">Chicken</p>
+            </div>
+            <div id="desc">
+                  <img src="pizza.jpg" alt="pizza">
+                  <p class="desc">Pizza</p>
+            </div>
+            <div id="desc">
+                   <img src="vegmeals-removebg-preview.png" alt="veg meal">
+                   <p class="desc">Veg Meals</p>
+            </div>
+        </div>
+        <h3 class="topp">Top brands for you</h3>
+        <div id="tp">
+             <div class="tp">
+               <img src="ap.png" alt="annapoorna">
+               <p class="ap">Sree Annapoorna</p>
+            </div>
+            <div class="tp">
+                <img src="kfc.png" alt="KFC">
+                <p class="ap">KFC</p>
+             </div>
+             <div class="tp">
+                <img src="dominos.png" alt="Dominos">
+                <p class="ap">Dominos</p>
+             </div>
+             <div class="tp">
+                <img src="a2b.png" alt="a2b">
+                <p class="ap">A2B</p>
+             </div>
+        </div>
+        <h3>Top picks for you</h3>
+        <div id="hotels">
+            
+            <div class="top">
+                <img src="ddl.jpg" alt="dindukal briyani">
+                <p class="ddl">Dindukal velu Briyani</p>
+            </div>
+            <div class="top">
+                <img src="piz.jpg" alt="Pizza hut">
+                <p class="ddl">Pizza hut</p>
+            </div>
+            <div class="top">
+                <img src="a2.jpg" alt="a2b">
+                <p class="ddl">A2B restaurant</p>
+            </div>
+            
+        </div>
+            <div id="hotels">
+                <div class="top">
+                    <img src="Kfchot.jpg" alt="kfc">
+                    <p class="ddl">KFC</p>
+                </div>
+                <div class="top">
+                    <img src="Anadhas.jpg" alt="anandhas">
+                    <p class="ddl">Shree Anandhas veg restaurant</p>
+                </div>
+                <div class="top">
+                    <img src="poori.jpg" alt="chola">
+                    <p class="ddl">Hotel chola</p>
+                </div>
+            
+                
+                
+            </div>
+            <div id="hotels">
+                <div class="top">
+                    <img src="kalids.jpg" alt="khalids">
+                    <p class="ddl">Khalids Briyani</p>
+                </div>
+                <div class="top">
+                    <img src="dom.jpg" alt="dominos">
+                    <p class="ddl">Domino's pizza</p>
+                </div>
+            
+                <div class="top">
+                    <img src="burger.jpg" alt="burger king">
+                    <p class="ddl">Burger King</p>
+                </div>
+                
+            </div>
+            
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <div class="footer">
+            <h2 >zomato</h2>
+            <div id="foot">
+              
+                <div class="last">
+                      <h4>ABOUT ZOMATO</h4>
+                    <ul class="last">
+                      <li >Who We Are</li>
+                      <li >Blog</li>
+                      <li >Work With Us</li>
+                      <li>Investor Relations</li>
+                      <li >Report Fraud</li>
+                      <li >Press Kit</li>
+                      <li >Contact Us</li>
+                    </ul>
+                </div>
+    
+                <div class="last">
+                       <h4>ZOMAVERSE</h4>
+                    <ul class="last">
+                      <li >Zomato</li>
+                      <li >Blinkit</li>
+                      <li >District</li>
+                      <li>Feeding India</li>
+                      <li >Hyperpure</li>
+                      <li >Zomato Live</li>
+                      <li >Zomaland</li>
+                    </ul>
+                </div>
+                   
+                <div class="last">
+                               <h4>For Restaurants</h4>
+                    <ul class="last">
+                        <li >Partner With Us</li>
+                        <li >Apps For You</li>
+                    </ul>
+                </div>
+                        
+                <div class="last">
+                          <h4>LEARN MORE</h4>
+                        <ul class="last">
+                            <li >Privacy</li>
+                            <li >Security</li>
+                            <li >Terms</li>
+                        </ul>
+                </div>
+    
+                <div class="last">
+                               <h4>SOCIAL LINKS</h4>
+                            <ul class="icon">
+                                <li class="icon"><i class="fa-brands fa-linkedin"></i></li>
+                                <li class="icon"><i class="fa-brands fa-square-instagram"></i></li>
+                                <li class="icon"><i class="fa-brands fa-square-x-twitter"></i></li>
+                                <li class="icon"><i class="fa-brands fa-square-youtube"></i></li>
+                                <li class="icon"><i class="fa-brands fa-facebook"></i></li><br>
+                                <!-- <p>Press Kit</p><br>
+                                <p>Contact Us</p> -->
+                            </ul>
+                            <p class="lastpara">Press Kit</p>
+                            <p class="lastpara">Contact Us</p>
+                 
+                </div>        
+            </div>
+            <hr><br>
+            By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved. <br><br>
+        </div>
+    
+</body>
+</html>

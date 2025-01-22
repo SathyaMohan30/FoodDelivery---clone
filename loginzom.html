@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="icon" href="Zomatoimg.jpeg">
+</head>
+<style>
+ 
+  #main{
+   border: 1px solid grey;
+   display: inline-block;
+   border-radius:15px;
+   padding: 25px;
+   margin-left: 500px;
+   margin-top:35px;
+    
+  }
+ .phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+#inline{
+    display: inline-block;
+}
+
+.flag-select {
+  margin-right: 10px;
+}
+
+.flag-select select {
+  border: none;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.flag-select select option {
+  padding: 5px;
+}
+.input{
+    border: none
+}
+.otp{
+    background-color: red;
+    color:white;
+    margin: 20px 0px 20px 0px;
+    border:none;
+    border-radius: 5px;
+    padding:15px;
+    width:400px;
+}
+.email{
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+    border:1px solid grey;
+    border-radius: 5px;
+    padding:15px;
+     width:400px;
+    text-align: center;
+}
+.gmail{
+    background-color: white;
+    margin: 20px 0px 20px 0px;
+    border:1px solid grey;
+    border-radius: 5px;
+    padding:15px;
+     width:400px;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.pop:hover{
+ 
+  transform: scale(1.05);
+}
+.otp:hover{
+  transform: scale(1.05);
+}
+.email:hover{
+  transform: scale(1.05);
+}
+.gmail:hover{
+  transform: scale(1.05);
+}
+.email:active{
+  transform: scale(1.15);
+}
+.gmail:active{
+  transform: scale(1.15);
+}
+</style>
+<body>
+    <div id="main">
+    <h2>Login</h2>
+    <div id="inline">
+     <div class="phone-input">
+        <div class="flag-select">
+          <select id="flag-select">
+            <option value="+91" data-flag="in">India (+91)</option>
+            <option value="+1" data-flag="us">United States (+1)</option>
+            <option value="+44" data-flag="gb">United Kingdom (+44)</option>
+            <hr style="height: 50px; border: none; border-left: 1px solid #ccc; margin: 0 10px;">
+            
+          </select>
+        </div>
+        <input class="input" type="tel" id="phone" name="phone" placeholder="Enter phone number">
+      </div>
+      <button class="otp">Send otp</button>
+      <hr><p>or</p>
+      <button class="email">Continue with Email</button><br>
+      <button class="gmail">Continue with Email</button>
+      <p>New to Zomato?</p>
+      <p class="pop">Create Account here</p>
+    </div>
+    
+    <!-- <input type="tel"placeholder="Phone" id="hone" name="phone" value="phone">
+    <label for="select"></label> -->
+</div>
+</body>
+</html>
